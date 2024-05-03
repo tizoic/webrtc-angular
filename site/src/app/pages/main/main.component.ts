@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+declare var wscCall: any; 
+
 @Component({
   selector: 'main',
   templateUrl: './main.component.html',
@@ -8,12 +10,10 @@ import { Component } from '@angular/core';
 
 
 export class MainComponent {
-  wscCall!: WscCall;
   constructor(){
-    this.wscCall = new WscCall();
   }
   setIceCheckInterval(time: number) {
     debugger
-    this.wscCall.setIceCheckInterval(time);
+    wscCall.setIceCheckInterval(time);
   }
 }
