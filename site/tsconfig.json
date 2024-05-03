@@ -24,6 +24,8 @@
     ]
   },
   "angularCompilerOptions": {
+    "allowJs": true,
+    "noImplicitAny": false,
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,

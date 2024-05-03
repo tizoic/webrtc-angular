@@ -40,6 +40,8 @@
               "src/styles.scss"
             ],
             "scripts": [
+              "src/scripts/logger.js",
+              "src/assets/scripts/test.js",
               "src/assets/scripts/wsc-call.js",
               "src/assets/scripts/wsc-capability.js",
               "src/assets/scripts/wsc-chat.js",
@@ -109,10 +111,24 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/scripts/test.js",
+              "src/assets/scripts/wsc-call.js",
+              "src/assets/scripts/wsc-capability.js",
+              "src/assets/scripts/wsc-chat.js",
+              "src/assets/scripts/wsc-common.js",
+              "src/assets/scripts/wsc-filetransfer.js",
+              "src/assets/scripts/wsc-flash.js",
+              "src/assets/scripts/wsc-ie-adapter.js",
+              "src/assets/scripts/wsc-messaging.js",
+              "src/assets/scripts/wsc-msgalert.js"
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

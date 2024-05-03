@@ -1,0 +1,1 @@
+var wsc=function(a){alert(a)};wsc("Hello World!");
