@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-
-declare var wscCall: any; 
+import { CallService } from '../../services/callservice.service';
 
 @Component({
   selector: 'main',
@@ -10,10 +9,14 @@ declare var wscCall: any;
 
 
 export class MainComponent {
-  constructor(){
-  }
-  setIceCheckInterval(time: number) {
+  constructor(private callService: CallService) { }
+
+  makeCall() {
     debugger
-    wscCall.setIceCheckInterval(time);
+    this.callService.makeCall()
+  }
+
+  showControls() {
+    return this.callService.shControls.asObservable();
   }
 }

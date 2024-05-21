@@ -1,4 +1,8 @@
 <div class="send">
-    <button (click)="setIceCheckInterval(2000)">Botao 1</button>
+    <button (click)="makeCall()">Fazer Ligação</button>
     <button>Botao 2</button>
 </div>
+<ng-container *ngIf(showControls)>
+    teste
+</ng-container>
+<audio id="remoteAudio" autoplay></audio>
